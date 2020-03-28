@@ -13,3 +13,8 @@ function increaseRankBy(n) {
     l[i].innerHTML = parseInt(l[i].innerHTML) + n
   }
 }
+
+function deepestChild() {
+  let l = document.querySelectorAll('div#grand-node div')
+  return l[l.length - 1].innerHTML
+}
